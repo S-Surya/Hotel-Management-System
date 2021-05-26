@@ -1,0 +1,5 @@
+import javax.swing.JOptionPane;
+
+public class test {
+	String fn = JOptionPane.showInputDialog("abhoi");
+}

@@ -1,0 +1,7 @@
+import javax.swing.JOptionPane;
+
+public class gui {
+	public static void main(String args[]) {
+		String fn = JOptionPane.showInputDialog("Enter First Number");
+	}
+}

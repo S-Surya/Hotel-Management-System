@@ -1,0 +1,17 @@
+import java.sql.*;
+import javax.swing.*;
+public class sqliteconnect {
+	Connection conn = null;
+	public static Connection dbconnector(){
+		try {
+			Class.forName("org.sqlite.JDBC");
+			Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\A Busy Jet\\Desktop\\database.db");
+			return conn;
+		}
+		catch(Exception e){
+			JOptionPane.showMessageDialog("Exception occured:"+e);
+			return null;
+		}
+	}
+
+}
